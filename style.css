@@ -4,16 +4,16 @@ nav{
     height: 90px;
 }
 
+nav ul li:first-child {
+    margin-right: auto; /* برای انتقال "رهام" به سمت چپ */
+}
+
 nav ul {
     display: flex;
-    flex-flow: nowrap;
+    align-items: center; /* برای همتراز کردن آیتم‌ها در مرکز محور عمودی */
     list-style-type: none;
-    flex-basis: 100%;
-    align-items: center;
     padding-bottom: 30px; 
     padding-top: 10px;
-    box-shadow: inset;
-    float: right;
     padding-right: 5px;
     border: none;
     gap: 2rem;
@@ -33,11 +33,12 @@ nav ul li h2 {
     width: 10px;
     height: 10px;
     flex-basis: auto;
-    text-align: left;
+    text-align: left;  
     padding-top: 35px;
-    padding-right: 570px;
+    padding-right: 90%;
     white-space: nowrap;
     font-size: 3rem;
+    margin: 0;
 }
 
 nav ul a {
